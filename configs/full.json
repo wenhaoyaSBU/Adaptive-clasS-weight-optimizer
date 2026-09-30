@@ -1,0 +1,13 @@
+{
+  "replicas": 50,
+  "n_background": 1000000,
+  "n_signal": 50000,
+  "epochs": 30,
+  "weight_epochs": 30,
+  "batch_size": 2048,
+  "meta_every": 5,
+  "scan_deltas": [-2, 0, 1, 2, 3, 4],
+  "binning_method": "trafoD",
+  "trafo_initial_bins": 500,
+  "save_predictions": false
+}

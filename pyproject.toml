@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmok-toy"
+version = "0.1.0"
+description = "Controlled Monte Carlo study of CMOK and adaptive class weights"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "torch>=2.1", "matplotlib>=3.7", "scikit-learn>=1.2", "uproot>=5"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+cmok-toy = "cmok_toy.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["cmok_toy*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
